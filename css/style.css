@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Outfit:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Open+Sans:wght@300&family=Outfit:wght@700&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+
+    
+    background-color: #ccf5ff;
+     font-family: 'Open Sans', sans-serif;
+}
+#title{
+    animation-name: moveInLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-in; 
+    font-size: 80px;
+    font-weight:800;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+#img_1{
+    animation-name: moveInRight;
+    animation-duration: 1s;
+    animation-timing-function: ease-in; 
+    width: 400px;
+}
+#img_2{
+    animation-name: moveInLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-in; 
+    width: 200px;
+}
+#image-div{
+    width: fit-content;
+}
+
+#img-caption{
+   font-size: 30px;
+   text-transform: uppercase;
+   font-weight: 600;
+}
+ 
+
+.img{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    width: fit-content;
+    max-width: 100%;
+    /* animation-name: moveInRight;
+    animation-duration: 1s;
+    animation-timing-function: ease-in; 
+     */
+}
+#tribute-info{
+    animation-name: moveUp;
+    animation-duration: 1s;
+    animation-timing-function: ease-in; 
+}
+
+#tribute-link{
+    text-decoration: none;
+}
+
+#tribute-link:hover{
+    color: aqua;
+}
+
+
+ 
+@keyframes moveInLeft {
+    0% {
+      opacity: 0;
+      transform: translateX(-100px); }
+    
+    80% {
+      transform: translateX(10px); }
+    100% {
+      opacity: 1;
+      transform: translate(0) ;} }
+  
+  @keyframes moveInRight {
+    0% {
+      opacity: 0;
+      transform: translateX(100px); }
+    80% {
+      transform: translateX(-10px); }
+    100% {
+      opacity: 1;
+      transform: translate(0); } }
+
+      @keyframes moveUp {
+        0% {
+          opacity: 0;
+          transform: translateY(30px); }
+        100% {
+          opacity: 1;
+          transform: translate(0); } }
+  
+  
+@media(max-width:375px) {
+    .img{
+        display: flex;
+        flex-direction: column;
+
+    }
+    
+}
